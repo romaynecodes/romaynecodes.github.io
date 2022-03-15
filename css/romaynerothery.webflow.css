@@ -1499,6 +1499,13 @@
     padding-top: 0px;
   }
 
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .wrapper.grid {
     height: 81%;
     grid-column-gap: 0px;
@@ -1533,6 +1540,19 @@
     padding-top: 0px;
     padding-right: 0px;
     padding-left: 32px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .nav-link {
@@ -1563,8 +1583,9 @@
   }
 
   .logo {
-    margin-top: 28px;
-    margin-bottom: auto;
+    max-width: 60%;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .nav-menu {
@@ -2222,13 +2243,29 @@
     height: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 21px;
-    padding-bottom: 22px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .wrapper.grid {
     -ms-grid-rows: 40fr auto;
     grid-template-rows: 40fr auto;
+  }
+
+  .wrapper.sidebside {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .nav-link {
@@ -2257,9 +2294,7 @@
   }
 
   .hero-section {
-    padding-right: 20px;
-    padding-bottom: 40px;
-    padding-left: 20px;
+    padding: 40px 20px;
   }
 
   .hero-image-box {
@@ -2314,6 +2349,29 @@
 
   .heading_48 {
     font-size: 28px;
+  }
+
+  .experience-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .number {
